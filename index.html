@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-Do List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div class="hero-text">
+        <p class="date" id="date"></p>
+        <h1>Today’s plan</h1>
+        <p class="sub" id="summary">Add your first task to get started.</p>
+      </div>
+      <div class="ring" aria-hidden="true">
+        <svg viewBox="0 0 100 100">
+          <circle class="track" cx="50" cy="50" r="44"/>
+          <circle class="bar" id="ring-bar" cx="50" cy="50" r="44"/>
+        </svg>
+        <span id="ring-text">0%</span>
+      </div>
+    </header>
+
+    <form id="task-form" class="task-form">
+      <input type="text" id="task-input" placeholder="What do you want to get done?" aria-label="New task" required>
+      <button type="submit" class="btn-add">Add task</button>
+    </form>
+
+    <div class="filters" role="tablist" aria-label="Filter tasks">
+      <button class="chip active" data-filter="all">All <b>0</b></button>
+      <button class="chip" data-filter="pending">Pending <b>0</b></button>
+      <button class="chip" data-filter="completed">Completed <b>0</b></button>
+    </div>
+
+    <ul id="task-list" class="task-list"></ul>
+
+    <footer class="app-footer">Small steps make big goals.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
