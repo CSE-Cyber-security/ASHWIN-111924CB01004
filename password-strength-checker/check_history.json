@@ -1,0 +1,20 @@
+[
+    {
+        "timestamp": "2026-11-06 22:53:49",
+        "password_length": 10,
+        "score": 35,
+        "rating": "Weak"
+    },
+    {
+        "timestamp": "2026-11-06 22:57:00",
+        "password_length": 15,
+        "score": 86,
+        "rating": "Very Strong"
+    },
+    {
+        "timestamp": "2026-11-06 22:57:10",
+        "password_length": 12,
+        "score": 61,
+        "rating": "Strong"
+    }
+]
